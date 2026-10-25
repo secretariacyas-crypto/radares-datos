@@ -125,6 +125,22 @@ class AutomationTest(unittest.TestCase):
         self.assertFalse(b.OUTPUT.exists())
         self.assertFalse(b.SOURCE.exists())
 
+    def test_fallo_de_overpass_no_publica(self):
+        zones = [b.Zone("Madrid", f"M-{i}", 0, 5) for i in range(b.MIN_ZONES)]
+
+        def caida(province, *_):
+            raise b.overpass_unavailable(province, TimeoutError("timed out"))
+
+        with mock.patch.object(b, "parse_pdf", return_value=(zones, "01/01/2027")), \
+                mock.patch.object(b, "dgt_radar_anchors", return_value={}), \
+                mock.patch.object(b, "process_province", side_effect=caida), \
+                mock.patch.object(b, "OVERPASS_FAILURES", []):
+            with self.assertRaises(SystemExit) as e:
+                self.run_main()
+        self.assertIn("Overpass", str(e.exception.code))
+        self.assertFalse(b.OUTPUT.exists())
+        self.assertFalse(b.SOURCE.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

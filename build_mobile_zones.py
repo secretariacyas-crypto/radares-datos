@@ -69,6 +69,15 @@ OVERPASS = [
 ]
 USER_AGENT = "AvisadorRadares-tools/0.1 (generador de tramos de radar movil)"
 
+# Descargas de Overpass que han fallado en esta ejecución. Si hay alguna no se publica nada: una
+# provincia entera podría quedarse sin tramos por una caída pasajera del servidor.
+OVERPASS_FAILURES: list[str] = []
+
+
+def overpass_unavailable(what: str, last: Exception) -> RuntimeError:
+    OVERPASS_FAILURES.append(f"{what}: {last}")
+    return RuntimeError(f"Overpass no responde: {last}")
+
 # Nombre de provincia tal y como lo escribe la DGT → códigos ISO 3166-2 que puede tener en OSM
 # (las comunidades uniprovinciales pueden estar etiquetadas con el código de la comunidad).
 PROVINCES = {
@@ -287,7 +296,7 @@ out geom;"""
                     last = e
                     log(f"  Overpass {endpoint} falló ({e}); reintento")
                     time.sleep(20 * (attempt + 1))
-        raise RuntimeError(f"Overpass no responde: {last}")
+        raise overpass_unavailable(province, last)
 
     return json.loads(cached(f"osm_{PROVINCES[province][0]}_{key}.json", fetch, OSM_CACHE_DAYS))
 
@@ -309,7 +318,7 @@ out geom;"""
                 except Exception as e:  # noqa: BLE001
                     last = e
                     time.sleep(15 * (attempt + 1))
-        raise RuntimeError(f"Overpass no responde: {last}")
+        raise overpass_unavailable(f"red viaria {bbox}", last)
 
     return json.loads(cached(f"net_{bbox.replace(',', '_')}.json", fetch, OSM_CACHE_DAYS))
 
@@ -894,6 +903,10 @@ def main():
     if args.only:
         out, report_path = CACHE / "prueba_mobile_zones.json", CACHE / "prueba_report.json"
     else:
+        if OVERPASS_FAILURES:
+            sys.exit(f"Salvaguarda: Overpass no respondió en {len(OVERPASS_FAILURES)} descarga(s) "
+                     f"({'; '.join(OVERPASS_FAILURES)}). No se publica nada; lo ya descargado queda "
+                     f"en caché para el siguiente intento.")
         previous_km = previous.get("kmSituados")
         if previous_km and km_ok < previous_km * MIN_KM_RATIO:
             sys.exit(f"Salvaguarda: se han situado {km_ok:.0f} km frente a {previous_km:.0f} en la última "

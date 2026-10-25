@@ -40,7 +40,7 @@ jobs:
         run: python -m unittest discover -s . -p "test_*.py"
 
       # Descargas de OpenStreetMap y CartoCiudad de ejecuciones anteriores (ahorran horas).
-      - uses: actions/cache@v6.1.0
+      - uses: actions/cache/restore@v6.1.0
         with:
           path: .cache
           key: descargas-${{ github.run_id }}
@@ -54,6 +54,13 @@ jobs:
           else
             python build_mobile_zones.py --if-changed
           fi
+
+      # Se guarda también si la generación falla, para que el siguiente intento no empiece de cero.
+      - uses: actions/cache/save@v6.1.0
+        if: always() && hashFiles('.cache/**') != ''
+        with:
+          path: .cache
+          key: descargas-${{ github.run_id }}
 
       - name: Publicar
         if: steps.gen.outputs.changed == 'true'
