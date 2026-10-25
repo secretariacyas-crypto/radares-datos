@@ -1,0 +1,1427 @@
+[
+ {
+  "province": "Albacete",
+  "road": "CM-3106",
+  "pkStart": 19.39,
+  "pkEnd": 32.39,
+  "sinSituar": [
+   [
+    19.4,
+    32.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3106",
+  "pkStart": 36.14,
+  "pkEnd": 59.35,
+  "sinSituar": [
+   [
+    36.1,
+    59.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-400",
+  "pkStart": 20.1,
+  "pkEnd": 44.07,
+  "sinSituar": [
+   [
+    20.1,
+    44.1
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-301",
+  "pkStart": 303.3,
+  "pkEnd": 337.45,
+  "sinSituar": [
+   [
+    303.3,
+    305.0
+   ],
+   [
+    308.0,
+    309.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Alicante",
+  "road": "N-325",
+  "pkStart": 6.51,
+  "pkEnd": 8.17,
+  "sinSituar": [
+   [
+    6.5,
+    8.2
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Alicante",
+  "road": "N-332",
+  "pkStart": 97.93,
+  "pkEnd": 116.21,
+  "sinSituar": [
+   [
+    97.9,
+    116.2
+   ]
+  ],
+  "problem": "sin referencias suficientes (54 puntos en la vía)"
+ },
+ {
+  "province": "Almería",
+  "road": "A-348",
+  "pkStart": 90.32,
+  "pkEnd": 134.36,
+  "sinSituar": [
+   [
+    133.0,
+    134.4
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Almería",
+  "road": "N-340a",
+  "pkStart": 383.9,
+  "pkEnd": 401.81,
+  "sinSituar": [
+   [
+    383.9,
+    401.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Almería",
+  "road": "N-340a",
+  "pkStart": 431.8,
+  "pkEnd": 438.3,
+  "sinSituar": [
+   [
+    431.8,
+    438.3
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Almería",
+  "road": "N-340a",
+  "pkStart": 464.0,
+  "pkEnd": 523.72,
+  "sinSituar": [
+   [
+    464.0,
+    523.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Almería",
+  "road": "N-347",
+  "pkStart": 0.0,
+  "pkEnd": 3.93,
+  "sinSituar": [
+   [
+    0.0,
+    3.9
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Asturias",
+  "road": "AS-246",
+  "pkStart": 0.0,
+  "pkEnd": 33.11,
+  "sinSituar": [
+   [
+    0.0,
+    33.1
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Asturias",
+  "road": "AS-248",
+  "pkStart": 0.0,
+  "pkEnd": 19.58,
+  "sinSituar": [
+   [
+    0.0,
+    19.6
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Asturias",
+  "road": "AS-253",
+  "pkStart": 0.0,
+  "pkEnd": 26.42,
+  "sinSituar": [
+   [
+    0.0,
+    26.4
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Asturias",
+  "road": "AS-266",
+  "pkStart": 4.526,
+  "pkEnd": 18.71,
+  "sinSituar": [
+   [
+    4.5,
+    18.7
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Asturias",
+  "road": "N-634",
+  "pkStart": 495.14,
+  "pkEnd": 525.03,
+  "sinSituar": [
+   [
+    515.0,
+    516.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Badajoz",
+  "road": "EX-100",
+  "pkStart": 37.04,
+  "pkEnd": 80.57,
+  "sinSituar": [
+   [
+    37.0,
+    80.6
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Badajoz",
+  "road": "N-435a",
+  "pkStart": 32.83,
+  "pkEnd": 35.78,
+  "sinSituar": [
+   [
+    32.8,
+    35.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Baleares",
+  "road": "C-731",
+  "pkStart": 1.57,
+  "pkEnd": 13.6,
+  "sinSituar": [
+   [
+    1.6,
+    13.6
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "C-733",
+  "pkStart": 2.31,
+  "pkEnd": 28.62,
+  "sinSituar": [
+   [
+    2.3,
+    28.6
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "Ma-1015",
+  "pkStart": 0.0,
+  "pkEnd": 9.6,
+  "sinSituar": [
+   [
+    9.0,
+    9.6
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Baleares",
+  "road": "Ma-14",
+  "pkStart": 0.38,
+  "pkEnd": 28.43,
+  "sinSituar": [
+   [
+    0.4,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Baleares",
+  "road": "Ma-3011",
+  "pkStart": 0.0,
+  "pkEnd": 31.4,
+  "sinSituar": [
+   [
+    30.0,
+    31.4
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Baleares",
+  "road": "Me-1",
+  "pkStart": 0.0,
+  "pkEnd": 20.92,
+  "sinSituar": [
+   [
+    13.0,
+    13.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Baleares",
+  "road": "PM-801",
+  "pkStart": 1.25,
+  "pkEnd": 4.82,
+  "sinSituar": [
+   [
+    1.2,
+    4.8
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "PM-803",
+  "pkStart": 0.0,
+  "pkEnd": 20.61,
+  "sinSituar": [
+   [
+    0.0,
+    20.6
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "PM-804",
+  "pkStart": 0.0,
+  "pkEnd": 11.24,
+  "sinSituar": [
+   [
+    0.0,
+    11.2
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "PM-810",
+  "pkStart": 0.0,
+  "pkEnd": 5.74,
+  "sinSituar": [
+   [
+    0.0,
+    5.7
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Baleares",
+  "road": "PM-810",
+  "pkStart": 7.41,
+  "pkEnd": 19.56,
+  "sinSituar": [
+   [
+    7.4,
+    19.6
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Burgos",
+  "road": "N-122",
+  "pkStart": 247.04,
+  "pkEnd": 268.79,
+  "sinSituar": [
+   [
+    268.0,
+    268.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Cantabria",
+  "road": "CA-241",
+  "pkStart": 0.0,
+  "pkEnd": 5.1,
+  "sinSituar": [
+   [
+    4.0,
+    5.1
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Castellón",
+  "road": "N-234",
+  "pkStart": 23.8,
+  "pkEnd": 24.713,
+  "sinSituar": [
+   [
+    23.8,
+    24.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (2 puntos en la vía)"
+ },
+ {
+  "province": "Castellón",
+  "road": "N-234",
+  "pkStart": 38.97,
+  "pkEnd": 63.6,
+  "sinSituar": [
+   [
+    47.0,
+    63.6
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Castellón",
+  "road": "N-340a",
+  "pkStart": 969.97,
+  "pkEnd": 972.08,
+  "sinSituar": [
+   [
+    970.0,
+    972.1
+   ]
+  ],
+  "problem": "sin referencias suficientes (2 puntos en la vía)"
+ },
+ {
+  "province": "Ciudad Real",
+  "road": "CM-3107",
+  "pkStart": 0.0,
+  "pkEnd": 46.4,
+  "sinSituar": [
+   [
+    45.0,
+    46.4
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Ciudad Real",
+  "road": "CM-3109",
+  "pkStart": 6.42,
+  "pkEnd": 54.33,
+  "sinSituar": [
+   [
+    6.4,
+    7.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Ciudad Real",
+  "road": "CM-4112",
+  "pkStart": 0.01,
+  "pkEnd": 23.72,
+  "sinSituar": [
+   [
+    0.0,
+    23.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Coruña, A",
+  "road": "AC-133",
+  "pkStart": 0.0,
+  "pkEnd": 10.95,
+  "sinSituar": [
+   [
+    10.0,
+    10.9
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Coruña, A",
+  "road": "VG-1.2",
+  "pkStart": 0.0,
+  "pkEnd": 5.81,
+  "sinSituar": [
+   [
+    5.0,
+    5.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Cuenca",
+  "road": "N-420",
+  "pkStart": 325.39,
+  "pkEnd": 374.75,
+  "sinSituar": [
+   [
+    325.4,
+    326.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Cáceres",
+  "road": "CC-100",
+  "pkStart": 0.0,
+  "pkEnd": 14.72,
+  "sinSituar": [
+   [
+    0.0,
+    14.7
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Cáceres",
+  "road": "CC-36",
+  "pkStart": 0.0,
+  "pkEnd": 41.7,
+  "sinSituar": [
+   [
+    0.0,
+    41.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Cáceres",
+  "road": "CC-38",
+  "pkStart": 1.5,
+  "pkEnd": 8.4,
+  "sinSituar": [
+   [
+    1.5,
+    8.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Cáceres",
+  "road": "EX-100",
+  "pkStart": 3.02,
+  "pkEnd": 16.5,
+  "sinSituar": [
+   [
+    3.0,
+    16.5
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Cáceres",
+  "road": "EX-100",
+  "pkStart": 19.0,
+  "pkEnd": 37.06,
+  "sinSituar": [
+   [
+    19.0,
+    37.1
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Cáceres",
+  "road": "EX-108",
+  "pkStart": 81.31,
+  "pkEnd": 101.96,
+  "sinSituar": [
+   [
+    92.0,
+    93.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Cádiz",
+  "road": "A-491R",
+  "pkStart": 0.0,
+  "pkEnd": 5.49,
+  "sinSituar": [
+   [
+    0.0,
+    5.5
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Córdoba",
+  "road": "N-IVa",
+  "pkStart": 382.71,
+  "pkEnd": 398.25,
+  "sinSituar": [
+   [
+    382.7,
+    398.2
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Granada",
+  "road": "A-403R3",
+  "pkStart": 0.0,
+  "pkEnd": 0.6,
+  "sinSituar": [
+   [
+    0.0,
+    0.6
+   ]
+  ],
+  "problem": "sin referencias suficientes (2 puntos en la vía)"
+ },
+ {
+  "province": "Granada",
+  "road": "A-4150",
+  "pkStart": 0.0,
+  "pkEnd": 10.81,
+  "sinSituar": [
+   [
+    10.0,
+    10.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Granada",
+  "road": "N-323a",
+  "pkStart": 380.85,
+  "pkEnd": 387.94,
+  "sinSituar": [
+   [
+    380.9,
+    387.9
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Granada",
+  "road": "N-323a",
+  "pkStart": 388.45,
+  "pkEnd": 400.44,
+  "sinSituar": [
+   [
+    388.4,
+    400.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Guadalajara",
+  "road": "CM-2004",
+  "pkStart": 0.13,
+  "pkEnd": 17.68,
+  "sinSituar": [
+   [
+    0.1,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Guadalajara",
+  "road": "N-204",
+  "pkStart": 0.13,
+  "pkEnd": 67.8,
+  "sinSituar": [
+   [
+    66.0,
+    67.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huelva",
+  "road": "A-493",
+  "pkStart": 0.0,
+  "pkEnd": 35.93,
+  "sinSituar": [
+   [
+    35.0,
+    35.9
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huelva",
+  "road": "N-630",
+  "pkStart": 738.48,
+  "pkEnd": 745.87,
+  "sinSituar": [
+   [
+    744.0,
+    745.9
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
+  "road": "N-123a",
+  "pkStart": 21.44,
+  "pkEnd": 42.96,
+  "sinSituar": [
+   [
+    21.4,
+    43.0
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Huesca",
+  "road": "N-240",
+  "pkStart": 182.53,
+  "pkEnd": 211.26,
+  "sinSituar": [
+   [
+    204.9,
+    211.3
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
+  "road": "N-330",
+  "pkStart": 586.37,
+  "pkEnd": 632.82,
+  "sinSituar": [
+   [
+    586.4,
+    610.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Jaén",
+  "road": "A-302",
+  "pkStart": 0.0,
+  "pkEnd": 13.86,
+  "sinSituar": [
+   [
+    13.3,
+    13.9
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Jaén",
+  "road": "JA-2321",
+  "pkStart": 0.0,
+  "pkEnd": 11.35,
+  "sinSituar": [
+   [
+    0.0,
+    11.3
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Jaén",
+  "road": "N-322",
+  "pkStart": 125.82,
+  "pkEnd": 246.45,
+  "sinSituar": [
+   [
+    178.0,
+    179.0
+   ],
+   [
+    194.0,
+    196.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Jaén",
+  "road": "N-323a",
+  "pkStart": 38.99,
+  "pkEnd": 62.72,
+  "sinSituar": [
+   [
+    39.0,
+    62.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "León",
+  "road": "CL-622",
+  "pkStart": 0.0,
+  "pkEnd": 41.7,
+  "sinSituar": [
+   [
+    40.0,
+    41.7
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Madrid",
+  "road": "M-513",
+  "pkStart": 7.1,
+  "pkEnd": 16.57,
+  "sinSituar": [
+   [
+    7.1,
+    8.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Murcia",
+  "road": "N-301a",
+  "pkStart": 352.1,
+  "pkEnd": 368.09,
+  "sinSituar": [
+   [
+    352.1,
+    368.1
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Murcia",
+  "road": "N-332",
+  "pkStart": 0.0,
+  "pkEnd": 35.12,
+  "sinSituar": [
+   [
+    0.0,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Málaga",
+  "road": "A-387",
+  "pkStart": 0.0,
+  "pkEnd": 19.28,
+  "sinSituar": [
+   [
+    15.0,
+    19.3
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Málaga",
+  "road": "N-340",
+  "pkStart": 279.91,
+  "pkEnd": 295.23,
+  "sinSituar": [
+   [
+    279.9,
+    295.2
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Navarra",
+  "road": "N-121C",
+  "pkStart": 1.72,
+  "pkEnd": 14.69,
+  "sinSituar": [
+   [
+    1.7,
+    14.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Navarra",
+  "road": "N-240A",
+  "pkStart": 6.09,
+  "pkEnd": 20.83,
+  "sinSituar": [
+   [
+    6.1,
+    20.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Navarra",
+  "road": "NA-132",
+  "pkStart": 1.62,
+  "pkEnd": 74.78,
+  "sinSituar": [
+   [
+    34.0,
+    36.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Navarra",
+  "road": "NA-411",
+  "pkStart": 0.0,
+  "pkEnd": 28.54,
+  "sinSituar": [
+   [
+    28.0,
+    28.5
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Navarra",
+  "road": "NA-700",
+  "pkStart": 2.34,
+  "pkEnd": 4.5,
+  "sinSituar": [
+   [
+    2.3,
+    4.5
+   ]
+  ],
+  "problem": "sin referencias suficientes (37 puntos en la vía)"
+ },
+ {
+  "province": "Ourense",
+  "road": "N-120a",
+  "pkStart": 570.68,
+  "pkEnd": 574.14,
+  "sinSituar": [
+   [
+    570.7,
+    574.1
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Ourense",
+  "road": "OU-0527",
+  "pkStart": 0.92,
+  "pkEnd": 1.47,
+  "sinSituar": [
+   [
+    0.9,
+    1.5
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Ourense",
+  "road": "OU-105",
+  "pkStart": 0.0,
+  "pkEnd": 5.54,
+  "sinSituar": [
+   [
+    5.0,
+    5.5
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Ourense",
+  "road": "OU-404",
+  "pkStart": 0.0,
+  "pkEnd": 31.78,
+  "sinSituar": [
+   [
+    30.0,
+    31.8
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Ourense",
+  "road": "OU-531",
+  "pkStart": 0.0,
+  "pkEnd": 51.35,
+  "sinSituar": [
+   [
+    25.0,
+    27.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Palmas, Las",
+  "road": "FV-2",
+  "pkStart": 0.0,
+  "pkEnd": 82.4,
+  "sinSituar": [
+   [
+    0.0,
+    0.6
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Palmas, Las",
+  "road": "GC-200",
+  "pkStart": 0.0,
+  "pkEnd": 65.23,
+  "sinSituar": [
+   [
+    29.0,
+    31.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Palmas, Las",
+  "road": "GC-31",
+  "pkStart": 0.0,
+  "pkEnd": 3.65,
+  "sinSituar": [
+   [
+    3.0,
+    3.6
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-131",
+  "pkStart": 2.51,
+  "pkEnd": 3.82,
+  "sinSituar": [
+   [
+    2.5,
+    3.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-250",
+  "pkStart": 1.95,
+  "pkEnd": 58.0,
+  "sinSituar": [
+   [
+    57.0,
+    58.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-232",
+  "pkStart": 417.46,
+  "pkEnd": 446.63,
+  "sinSituar": [
+   [
+    417.5,
+    418.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Salamanca",
+  "road": "N-620",
+  "pkStart": 202.91,
+  "pkEnd": 232.38,
+  "sinSituar": [
+   [
+    202.9,
+    208.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Segovia",
+  "road": "CL-601",
+  "pkStart": 113.42,
+  "pkEnd": 137.4,
+  "sinSituar": [
+   [
+    113.4,
+    137.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Segovia",
+  "road": "CL-607",
+  "pkStart": 0.0,
+  "pkEnd": 7.5,
+  "sinSituar": [
+   [
+    0.0,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Segovia",
+  "road": "SG-232",
+  "pkStart": 0.45,
+  "pkEnd": 22.13,
+  "sinSituar": [
+   [
+    0.5,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Sevilla",
+  "road": "A-388",
+  "pkStart": 0.0,
+  "pkEnd": 36.41,
+  "sinSituar": [
+   [
+    35.0,
+    36.4
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Sevilla",
+  "road": "N-630",
+  "pkStart": 808.8,
+  "pkEnd": 810.76,
+  "sinSituar": [
+   [
+    808.8,
+    810.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Soria",
+  "road": "N-IIa",
+  "pkStart": 145.1,
+  "pkEnd": 153.8,
+  "sinSituar": [
+   [
+    145.1,
+    153.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Teruel",
+  "road": "A-231",
+  "pkStart": 0.0,
+  "pkEnd": 31.28,
+  "sinSituar": [
+   [
+    30.0,
+    31.3
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Teruel",
+  "road": "N-211",
+  "pkStart": 91.47,
+  "pkEnd": 108.39,
+  "sinSituar": [
+   [
+    107.0,
+    108.4
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Teruel",
+  "road": "N-420",
+  "pkStart": 754.4,
+  "pkEnd": 781.68,
+  "sinSituar": [
+   [
+    780.0,
+    781.7
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Toledo",
+  "road": "CM-4006",
+  "pkStart": 22.65,
+  "pkEnd": 24.08,
+  "sinSituar": [
+   [
+    22.6,
+    24.1
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Toledo",
+  "road": "CM-4010",
+  "pkStart": 0.0,
+  "pkEnd": 1.04,
+  "sinSituar": [
+   [
+    0.0,
+    1.0
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Toledo",
+  "road": "N-Va",
+  "pkStart": 40.65,
+  "pkEnd": 45.92,
+  "sinSituar": [
+   [
+    40.6,
+    45.9
+   ]
+  ],
+  "problem": "sin referencias suficientes (2 puntos en la vía)"
+ },
+ {
+  "province": "Valencia",
+  "road": "CV-40",
+  "pkStart": 0.59,
+  "pkEnd": 24.22,
+  "sinSituar": [
+   [
+    0.6,
+    24.2
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Valencia",
+  "road": "CV-60",
+  "pkStart": 0.0,
+  "pkEnd": 34.88,
+  "sinSituar": [
+   [
+    29.0,
+    30.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Valencia",
+  "road": "N-340",
+  "pkStart": 817.98,
+  "pkEnd": 826.41,
+  "sinSituar": [
+   [
+    818.0,
+    826.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Valladolid",
+  "road": "CL-600",
+  "pkStart": 6.09,
+  "pkEnd": 28.01,
+  "sinSituar": [
+   [
+    6.1,
+    7.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Zamora",
+  "road": "N-630",
+  "pkStart": 281.23,
+  "pkEnd": 283.42,
+  "sinSituar": [
+   [
+    281.2,
+    283.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "CV-624",
+  "pkStart": 0.0,
+  "pkEnd": 0.74,
+  "sinSituar": [
+   [
+    0.0,
+    0.7
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "CV-661",
+  "pkStart": 0.0,
+  "pkEnd": 4.34,
+  "sinSituar": [
+   [
+    0.0,
+    4.3
+   ]
+  ],
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "N-232",
+  "pkStart": 269.14,
+  "pkEnd": 296.78,
+  "sinSituar": [
+   [
+    286.0,
+    291.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "N-IIa",
+  "pkStart": 190.4,
+  "pkEnd": 191.0,
+  "sinSituar": [
+   [
+    190.4,
+    191.0
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "N-IIe",
+  "pkStart": 226.48,
+  "pkEnd": 228.43,
+  "sinSituar": [
+   [
+    226.5,
+    228.4
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ },
+ {
+  "province": "Zaragoza",
+  "road": "N-330a",
+  "pkStart": 527.63,
+  "pkEnd": 531.76,
+  "sinSituar": [
+   [
+    527.6,
+    531.8
+   ]
+  ],
+  "problem": "sin referencias suficientes (0 puntos en la vía)"
+ }
+]
