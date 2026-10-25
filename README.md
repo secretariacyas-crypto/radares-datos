@@ -19,10 +19,11 @@ La GitHub Action [`regenerar.yml`](.github/workflows/regenerar.yml):
   de OpenStreetMap y CartoCiudad;
 - también se puede lanzar a mano desde *Actions → Regenerar tramos → Run workflow*.
 
-Antes de publicar se ejecutan los tests del generador y una salvaguarda: si los km situados
-bajan más de un 10 % respecto a la publicación anterior, o el PDF trae menos de 300 tramos (p.
-ej. porque la DGT cambia su formato), no se publica nada y se abre una *issue*. La app sigue
-usando los últimos datos buenos.
+Antes de publicar se ejecutan los tests del generador y una salvaguarda: si Overpass
+(OpenStreetMap) no responde en alguna descarga, si los km situados bajan más de un 10 % respecto
+a la publicación anterior, o si el PDF trae menos de 300 tramos (p. ej. porque la DGT cambia su
+formato), no se publica nada y se abre una *issue*. La app sigue usando los últimos datos buenos.
+Lo descargado se guarda en caché igualmente, así que el siguiente intento es más rápido.
 
 [`fuente.json`](fuente.json) indica qué PDF se usó y la cobertura obtenida;
 [`report.json`](report.json) lista lo que no se pudo situar.
