@@ -1,6 +1,19 @@
 [
  {
   "province": "Albacete",
+  "road": "CM-220",
+  "pkStart": 17.3,
+  "pkEnd": 34.8,
+  "sinSituar": [
+   [
+    17.3,
+    34.8
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
   "road": "CM-3106",
   "pkStart": 19.39,
   "pkEnd": 32.39,
@@ -10,7 +23,7 @@
     32.4
    ]
   ],
-  "problem": "sin referencias suficientes (0 puntos en la vía)"
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
  },
  {
   "province": "Albacete",
@@ -23,7 +36,176 @@
     59.4
    ]
   ],
-  "problem": "sin referencias suficientes (0 puntos en la vía)"
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3121",
+  "pkStart": 0.0,
+  "pkEnd": 30.87,
+  "sinSituar": [
+   [
+    0.0,
+    30.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-313",
+  "pkStart": 33.117,
+  "pkEnd": 127.43,
+  "sinSituar": [
+   [
+    33.1,
+    127.4
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3135",
+  "pkStart": 0.0,
+  "pkEnd": 16.89,
+  "sinSituar": [
+   [
+    0.0,
+    16.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3135",
+  "pkStart": 17.83,
+  "pkEnd": 37.4,
+  "sinSituar": [
+   [
+    17.8,
+    37.4
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-320",
+  "pkStart": 5.21,
+  "pkEnd": 24.3,
+  "sinSituar": [
+   [
+    5.2,
+    24.3
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3211",
+  "pkStart": 19.07,
+  "pkEnd": 29.91,
+  "sinSituar": [
+   [
+    19.1,
+    29.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3212",
+  "pkStart": 0.0,
+  "pkEnd": 10.28,
+  "sinSituar": [
+   [
+    0.0,
+    10.3
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3213",
+  "pkStart": 0.02,
+  "pkEnd": 30.22,
+  "sinSituar": [
+   [
+    0.0,
+    30.2
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3215",
+  "pkStart": 0.61,
+  "pkEnd": 17.09,
+  "sinSituar": [
+   [
+    0.6,
+    17.1
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3218",
+  "pkStart": 8.08,
+  "pkEnd": 11.88,
+  "sinSituar": [
+   [
+    8.1,
+    11.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3222",
+  "pkStart": 0.05,
+  "pkEnd": 17.96,
+  "sinSituar": [
+   [
+    0.1,
+    18.0
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-3226",
+  "pkStart": 0.93,
+  "pkEnd": 21.96,
+  "sinSituar": [
+   [
+    0.9,
+    22.0
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-332",
+  "pkStart": 0.0,
+  "pkEnd": 56.01,
+  "sinSituar": [
+   [
+    0.0,
+    56.0
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
  },
  {
   "province": "Albacete",
@@ -36,7 +218,72 @@
     44.1
    ]
   ],
-  "problem": "sin referencias suficientes (0 puntos en la vía)"
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-412",
+  "pkStart": 158.85,
+  "pkEnd": 168.52,
+  "sinSituar": [
+   [
+    158.8,
+    168.5
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-412",
+  "pkStart": 170.77,
+  "pkEnd": 272.75,
+  "sinSituar": [
+   [
+    170.8,
+    272.8
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "CM-412",
+  "pkStart": 274.61,
+  "pkEnd": 344.68,
+  "sinSituar": [
+   [
+    274.6,
+    344.7
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-301",
+  "pkStart": 257.16,
+  "pkEnd": 274.77,
+  "sinSituar": [
+   [
+    257.2,
+    274.8
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-301",
+  "pkStart": 277.51,
+  "pkEnd": 300.9,
+  "sinSituar": [
+   [
+    277.5,
+    300.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
  },
  {
   "province": "Albacete",
@@ -46,14 +293,101 @@
   "sinSituar": [
    [
     303.3,
-    305.0
-   ],
-   [
-    308.0,
-    309.0
+    337.4
    ]
   ],
-  "problem": "situado en parte"
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-310",
+  "pkStart": 121.18,
+  "pkEnd": 144.99,
+  "sinSituar": [
+   [
+    121.2,
+    145.0
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-322",
+  "pkStart": 268.68,
+  "pkEnd": 289.52,
+  "sinSituar": [
+   [
+    268.7,
+    289.5
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-322",
+  "pkStart": 316.29,
+  "pkEnd": 347.1,
+  "sinSituar": [
+   [
+    316.3,
+    347.1
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-322",
+  "pkStart": 356.92,
+  "pkEnd": 395.38,
+  "sinSituar": [
+   [
+    356.9,
+    395.4
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-322",
+  "pkStart": 408.5,
+  "pkEnd": 425.59,
+  "sinSituar": [
+   [
+    408.5,
+    425.6
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-430",
+  "pkStart": 419.52,
+  "pkEnd": 445.98,
+  "sinSituar": [
+   [
+    419.5,
+    446.0
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
+ },
+ {
+  "province": "Albacete",
+  "road": "N-430",
+  "pkStart": 463.75,
+  "pkEnd": 511.94,
+  "sinSituar": [
+   [
+    463.8,
+    511.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: HTTP Error 504: Gateway Timeout"
  },
  {
   "province": "Alicante",
@@ -629,6 +963,19 @@
  },
  {
   "province": "Granada",
+  "road": "A-315",
+  "pkStart": 98.98,
+  "pkEnd": 103.74,
+  "sinSituar": [
+   [
+    103.0,
+    103.7
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Granada",
   "road": "A-403R3",
   "pkStart": 0.0,
   "pkEnd": 0.6,
@@ -678,6 +1025,19 @@
    ]
   ],
   "problem": "sin referencias suficientes (1 puntos en la vía)"
+ },
+ {
+  "province": "Granada",
+  "road": "N-340",
+  "pkStart": 359.52,
+  "pkEnd": 375.02,
+  "sinSituar": [
+   [
+    374.0,
+    375.0
+   ]
+  ],
+  "problem": "situado en parte"
  },
  {
   "province": "Guadalajara",
@@ -733,6 +1093,45 @@
  },
  {
   "province": "Huesca",
+  "road": "A-1223",
+  "pkStart": 0.0,
+  "pkEnd": 41.7,
+  "sinSituar": [
+   [
+    0.0,
+    1.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
+  "road": "A-130",
+  "pkStart": 0.0,
+  "pkEnd": 29.69,
+  "sinSituar": [
+   [
+    12.0,
+    13.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
+  "road": "A-139",
+  "pkStart": 46.79,
+  "pkEnd": 72.88,
+  "sinSituar": [
+   [
+    55.0,
+    56.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
   "road": "N-123a",
   "pkStart": 21.44,
   "pkEnd": 42.96,
@@ -742,7 +1141,33 @@
     43.0
    ]
   ],
-  "problem": "sin referencias suficientes (0 puntos en la vía)"
+  "problem": "carretera no encontrada en OpenStreetMap"
+ },
+ {
+  "province": "Huesca",
+  "road": "N-II",
+  "pkStart": 394.35,
+  "pkEnd": 431.01,
+  "sinSituar": [
+   [
+    430.0,
+    431.0
+   ]
+  ],
+  "problem": "situado en parte"
+ },
+ {
+  "province": "Huesca",
+  "road": "N-230",
+  "pkStart": 29.0,
+  "pkEnd": 117.36,
+  "sinSituar": [
+   [
+    39.0,
+    40.0
+   ]
+  ],
+  "problem": "situado en parte"
  },
  {
   "province": "Huesca",
@@ -753,19 +1178,6 @@
    [
     204.9,
     211.3
-   ]
-  ],
-  "problem": "situado en parte"
- },
- {
-  "province": "Huesca",
-  "road": "N-330",
-  "pkStart": 586.37,
-  "pkEnd": 632.82,
-  "sinSituar": [
-   [
-    586.4,
-    610.0
    ]
   ],
   "problem": "situado en parte"
@@ -802,10 +1214,6 @@
   "pkStart": 125.82,
   "pkEnd": 246.45,
   "sinSituar": [
-   [
-    178.0,
-    179.0
-   ],
    [
     194.0,
     196.0
@@ -874,19 +1282,6 @@
    [
     0.0,
     1.0
-   ]
-  ],
-  "problem": "situado en parte"
- },
- {
-  "province": "Málaga",
-  "road": "A-387",
-  "pkStart": 0.0,
-  "pkEnd": 19.28,
-  "sinSituar": [
-   [
-    15.0,
-    19.3
    ]
   ],
   "problem": "situado en parte"
@@ -1061,17 +1456,56 @@
   "problem": "situado en parte"
  },
  {
-  "province": "Palmas, Las",
-  "road": "GC-31",
+  "province": "Rioja, La",
+  "road": "LR-111",
   "pkStart": 0.0,
-  "pkEnd": 3.65,
+  "pkEnd": 37.72,
   "sinSituar": [
    [
-    3.0,
-    3.6
+    0.0,
+    37.7
    ]
   ],
-  "problem": "situado en parte"
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-113",
+  "pkStart": 0.03,
+  "pkEnd": 76.41,
+  "sinSituar": [
+   [
+    0.0,
+    76.4
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-115",
+  "pkStart": 0.0,
+  "pkEnd": 43.3,
+  "sinSituar": [
+   [
+    0.0,
+    43.3
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-123",
+  "pkStart": 0.0,
+  "pkEnd": 48.88,
+  "sinSituar": [
+   [
+    0.0,
+    48.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
  },
  {
   "province": "Rioja, La",
@@ -1084,7 +1518,33 @@
     3.8
    ]
   ],
-  "problem": "sin referencias suficientes (1 puntos en la vía)"
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-134",
+  "pkStart": 0.0,
+  "pkEnd": 16.74,
+  "sinSituar": [
+   [
+    0.0,
+    16.7
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-209",
+  "pkStart": 0.9,
+  "pkEnd": 10.89,
+  "sinSituar": [
+   [
+    0.9,
+    10.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
  },
  {
   "province": "Rioja, La",
@@ -1093,11 +1553,89 @@
   "pkEnd": 58.0,
   "sinSituar": [
    [
-    57.0,
+    1.9,
     58.0
    ]
   ],
-  "problem": "situado en parte"
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "LR-254",
+  "pkStart": 0.0,
+  "pkEnd": 6.22,
+  "sinSituar": [
+   [
+    0.0,
+    6.2
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-111",
+  "pkStart": 262.57,
+  "pkEnd": 321.4,
+  "sinSituar": [
+   [
+    262.6,
+    321.4
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-113",
+  "pkStart": 64.65,
+  "pkEnd": 68.18,
+  "sinSituar": [
+   [
+    64.7,
+    68.2
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-120",
+  "pkStart": 47.93,
+  "pkEnd": 53.29,
+  "sinSituar": [
+   [
+    47.9,
+    53.3
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-232",
+  "pkStart": 330.9,
+  "pkEnd": 360.81,
+  "sinSituar": [
+   [
+    330.9,
+    360.8
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-232",
+  "pkStart": 362.37,
+  "pkEnd": 402.76,
+  "sinSituar": [
+   [
+    362.4,
+    402.8
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
  },
  {
   "province": "Rioja, La",
@@ -1107,23 +1645,36 @@
   "sinSituar": [
    [
     417.5,
-    418.0
+    446.6
    ]
   ],
-  "problem": "situado en parte"
+  "problem": "error: Overpass no responde: The read operation timed out"
  },
  {
-  "province": "Salamanca",
-  "road": "N-620",
-  "pkStart": 202.91,
-  "pkEnd": 232.38,
+  "province": "Rioja, La",
+  "road": "N-232",
+  "pkStart": 447.74,
+  "pkEnd": 452.81,
   "sinSituar": [
    [
-    202.9,
-    208.0
+    447.7,
+    452.8
    ]
   ],
-  "problem": "situado en parte"
+  "problem": "error: Overpass no responde: The read operation timed out"
+ },
+ {
+  "province": "Rioja, La",
+  "road": "N-232",
+  "pkStart": 458.42,
+  "pkEnd": 467.88,
+  "sinSituar": [
+   [
+    458.4,
+    467.9
+   ]
+  ],
+  "problem": "error: Overpass no responde: The read operation timed out"
  },
  {
   "province": "Segovia",
@@ -1296,19 +1847,6 @@
  },
  {
   "province": "Valencia",
-  "road": "CV-60",
-  "pkStart": 0.0,
-  "pkEnd": 34.88,
-  "sinSituar": [
-   [
-    29.0,
-    30.0
-   ]
-  ],
-  "problem": "situado en parte"
- },
- {
-  "province": "Valencia",
   "road": "N-340",
   "pkStart": 817.98,
   "pkEnd": 826.41,
@@ -1379,8 +1917,8 @@
   "pkEnd": 296.78,
   "sinSituar": [
    [
-    286.0,
-    291.0
+    281.0,
+    282.0
    ]
   ],
   "problem": "situado en parte"
