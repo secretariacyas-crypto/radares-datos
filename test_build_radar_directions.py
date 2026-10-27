@@ -86,6 +86,12 @@ class ParseTest(unittest.TestCase):
         p = fixed.points[0]
         self.assertEqual((p.road, p.km, p.positive, p.province), ("A-1", 24.0, False, "Madrid"))
 
+    def test_provincias_sin_cero_inicial(self):
+        # La DGT escribe «4» para Almería (código INE «04»).
+        body = DATEX.replace("<_0:provinceINEIdentifier>28<", "<_0:provinceINEIdentifier>4<")
+        radars = {r.id: r for r in d.parse_radars(body.encode())}
+        self.assertEqual(radars["CABINACINEMOMETRO_2"].points[0].province, "Almería")
+
 
 class OrientTest(unittest.TestCase):
     def test_elige_el_sentido_de_la_via_hacia_los_km(self):
@@ -146,6 +152,15 @@ class SolveTest(unittest.TestCase):
         r = radar("solo", 5, True)
         d.solve([r], two_way_road(), cartociudad=no_cartociudad)
         self.assertEqual(r.directions, [])
+
+    def test_hitos_de_osm_como_puntos_km(self):
+        r = radar("solo", 5, False)
+        index = two_way_road()
+        d.solve([r], index, cartociudad=no_cartociudad)
+        self.assertEqual(r.method, "sin puntos km")
+        hitos = {"A-1": [d.KmPoint(4, *at(4)), d.KmPoint(6, *at(6))]}
+        d.solve([r], index, cartociudad=no_cartociudad, extra_points=hitos)
+        self.assertLess(d.angle_diff(r.directions[0], 180), 1)
 
     def test_el_pdf_contradice_o_dice_ambos(self):
         senses = {"A-1": [(5.0, "Ambos")]}

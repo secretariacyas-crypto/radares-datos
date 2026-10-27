@@ -14,8 +14,9 @@ Este script:
 1. Toma de OpenStreetMap la vía más cercana a cada punto (preferentemente la que lleva el número
    de la carretera) y calcula su orientación local, sin sentido (p. ej. «norte-sur»).
 2. Radares fijos: averigua hacia dónde crecen los km con puntos kilométricos cercanos
-   (CartoCiudad y los demás radares de la DGT de la misma carretera), elige con eso uno de los dos
-   sentidos de la vía y lo invierte si el radar es «negative».
+   (CartoCiudad, los demás radares de la DGT de la misma carretera y, para los que siguen sin
+   ninguno, los hitos kilométricos de OpenStreetMap), elige con eso uno de los dos sentidos de
+   la vía y lo invierte si el radar es «negative».
    Radares de tramo: orienta la vía en cada extremo según el recorrido del inicio al fin.
 3. Descarta el sentido (el radar se avisará en los dos, como sin este fichero) cuando hay
    contradicciones, porque un sentido equivocado haría callar a la app ante un radar real:
@@ -70,6 +71,7 @@ TWIN_KM = 0.2                  # puntos km más cercanos que esto al radar no si
 MAX_PK_SPAN_KM = 5             # los puntos km que orientan la vía, a menos de esto entre sí
 MAX_CHORD_KM = 2.5             # sin vía OSM, la recta entre puntos km sirve de rumbo si son más cercanos
 AMBIGUOUS = (60, 120)          # vía casi perpendicular a la dirección de los km: no se decide
+MILESTONE_RADIUS_M = 3000      # hitos kilométricos de OSM que se buscan alrededor de cada radar
 VALIDATE_MAX_M = 12            # contraste: radar a menos de esto de una calzada de sentido único
 PDF_MATCH_KM = 0.15            # un radar del PDF es el mismo si está en la misma vía a menos de 150 m de km
 MIN_COVERAGE = 0.7             # salvaguarda: radares fijos con sentido
@@ -134,7 +136,8 @@ def parse_radars(body: bytes) -> list[Radar]:
                 road=text("roadNumber"),
                 km=float(km) / 1000 if km else None,
                 positive=None if direction not in ("positive", "negative") else direction == "positive",
-                province=INE_PROVINCE.get(text("provinceINEIdentifier") or ""),
+                # La DGT escribe «4» para Almería; el INE, «04».
+                province=INE_PROVINCE.get((text("provinceINEIdentifier") or "").zfill(2)),
             ))
 
         def coords(parent) -> tuple[float, float] | None:
@@ -332,6 +335,35 @@ def road_at(index: WayIndex, p: Point) -> RoadHit | None:
     return best
 
 
+def fetch_milestones(points: list[Point]) -> dict[str, list["KmPoint"]]:
+    """Hitos kilométricos de OSM (highway=milestone) cerca de los puntos, por carretera.
+
+    Es un complemento: si Overpass no responde se sigue sin ellos (no bloquea la publicación)."""
+    clauses = "\n".join(
+        f'  node["highway"="milestone"](around:{MILESTONE_RADIUS_M},{p.lat:.6f},{p.lon:.6f});' for p in points)
+    query = f"[out:json][timeout:300];\n(\n{clauses}\n);\nout;"
+    key = hashlib.sha1(query.encode()).hexdigest()[:12]
+
+    def fetch():
+        last = None
+        for attempt in range(3):
+            for endpoint in OVERPASS:
+                try:
+                    return http_get(endpoint, data=urllib.parse.urlencode({"data": query}).encode(), timeout=400)
+                except Exception as e:  # noqa: BLE001 - se reintenta con otro servidor
+                    last = e
+            time.sleep(30 * (attempt + 1))
+        raise last
+
+    try:
+        data = json.loads(cached(f"osm_radar_milestones_{key}.json", fetch, OSM_CACHE_DAYS))
+    except Exception as e:  # noqa: BLE001
+        log(f"Aviso: sin hitos kilométricos de OSM ({e})")
+        return {}
+    roads = {norm_road(p.road) for p in points if p.road}
+    return {road: [KmPoint(a.km, a.lat, a.lon) for a in bmz.osm_milestones(data, road)] for road in roads}
+
+
 # --------------------------------------------------------------------------- 3. hacia dónde crecen los km
 
 @dataclass
@@ -348,12 +380,13 @@ def plausible(p: Point, a: KmPoint) -> bool:
     return span * 0.5 - 250 <= d <= span * 1.5 + 250
 
 
-def km_bearing(p: Point, dgt_points: dict[str, list[KmPoint]], cartociudad=bmz.cartociudad) -> tuple[float, float] | None:
-    """Rumbo hacia los km crecientes junto al radar y separación (km) de los puntos usados."""
+def km_bearing(p: Point, km_points: dict[str, list[KmPoint]], cartociudad=bmz.cartociudad) -> tuple[float, float] | None:
+    """Rumbo hacia los km crecientes junto al radar y separación (km) de los puntos usados.
+    `km_points`: puntos km conocidos por carretera (otros radares de la DGT, hitos de OSM)."""
     if p.km is None or not p.road:
         return None
     road = norm_road(p.road)
-    others = [a for a in dgt_points.get(road, []) if abs(a.km - p.km) >= TWIN_KM]
+    others = [a for a in km_points.get(road, []) if abs(a.km - p.km) >= TWIN_KM]
 
     def side(sign: int) -> KmPoint | None:
         """Punto km más cercano por debajo (sign=-1) o por encima (+1) del radar."""
@@ -398,14 +431,19 @@ def orient(axis: float | None, towards: float, chord_km: float) -> float | None:
 # --------------------------------------------------------------------------- 4. cálculo
 
 def solve(radars: list[Radar], index: WayIndex, cartociudad=bmz.cartociudad,
-          senses: dict[str, list[tuple[float, str]]] | None = None) -> dict:
-    dgt_points: dict[str, list[KmPoint]] = {}
+          senses: dict[str, list[tuple[float, str]]] | None = None,
+          extra_points: dict[str, list[KmPoint]] | None = None) -> dict:
+    """Calcula el sentido de cada radar. Se puede repetir (p. ej. con más puntos km en `extra_points`)."""
+    km_points: dict[str, list[KmPoint]] = {}
     for r in radars:
         for p in r.points:
             if p.road and p.km is not None:
-                dgt_points.setdefault(norm_road(p.road), []).append(KmPoint(p.km, p.lat, p.lon))
+                km_points.setdefault(norm_road(p.road), []).append(KmPoint(p.km, p.lat, p.lon))
+    for road, points in (extra_points or {}).items():
+        km_points.setdefault(road, []).extend(points)
 
     def one(r: Radar):
+        r.directions, r.method = [], ""
         hits = [road_at(index, p) for p in r.points]
         if r.section:
             start, end = r.points
@@ -421,7 +459,7 @@ def solve(radars: list[Radar], index: WayIndex, cartociudad=bmz.cartociudad,
         if senses and pdf_disagrees(p, senses):
             r.method = "el PDF da otro sentido"
             return
-        kb = km_bearing(p, dgt_points, cartociudad)
+        kb = km_bearing(p, km_points, cartociudad)
         if kb is None:
             r.method = "sin puntos km"
             return
@@ -495,7 +533,14 @@ def main():
 
     ways = fetch_ways([p for r in radars for p in r.points])
     log(f"{len(ways)} vías de OpenStreetMap junto a los radares")
-    stats = solve(radars, WayIndex(ways), senses=senses)
+    index = WayIndex(ways)
+    stats = solve(radars, index, senses=senses)
+    pending = [r.points[0] for r in radars if r.method == "sin puntos km"]
+    if pending:
+        milestones = fetch_milestones(pending)
+        if any(milestones.values()):
+            log(f"{sum(map(len, milestones.values()))} hitos kilométricos de OSM para {len(pending)} radares sin puntos km")
+            stats = solve(radars, index, senses=senses, extra_points=milestones)
 
     coverage = stats["fixedWithDirection"] / max(stats["fixed"], 1)
     agreement = stats["agree"] / stats["checked"] if stats["checked"] else 1.0

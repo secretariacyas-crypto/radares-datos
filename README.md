@@ -77,8 +77,8 @@ vigilan los dos sentidos aparecen dos veces) y, en los de tramo, su inicio y su 
 
 1. Toma de OpenStreetMap la vía en la que está cada radar y su orientación local.
 2. Radares fijos: averigua hacia dónde crecen los km con puntos kilométricos cercanos
-   (CartoCiudad y otros radares de la misma carretera) y elige el sentido de la vía que
-   corresponde. Radares de tramo: el sentido que va del inicio al fin.
+   (CartoCiudad, otros radares de la misma carretera o hitos kilométricos de OSM) y elige el
+   sentido de la vía que corresponde. Radares de tramo: el sentido que va del inicio al fin.
 3. Por prudencia, deja sin sentido (la app avisará en los dos) los radares con datos
    contradictorios: un sentido equivocado haría callar a la app ante un radar real.
    - Si el radar está sobre una calzada de sentido único de OSM que va al revés. Pasa con
@@ -86,7 +86,7 @@ vigilan los dos sentidos aparecen dos veces) y, en los de tramo, su inicio y su 
      que la coordenada esté en la otra calzada.
    - Si el PDF de la DGT da otro sentido o «Ambos».
 
-Resultado actual: sentido para el 78 % de los radares fijos y 43 de los 47 de tramo. De los
+Resultado actual: sentido para el 90 % de los radares fijos y 43 de los 47 de tramo. De los
 radares sobre calzadas de sentido único, el 89 % coincide con la calzada; si eso bajara del 80 %,
 o la cobertura del 70 %, no se publica nada y se abre una *issue*. Se recalcula cuando cambia el
 inventario de radares de la DGT y el día 1 de cada mes.
