@@ -63,6 +63,45 @@ python build_mobile_zones.py --only GR,Z       # pruebas con algunas provincias 
 `path` es la lista plana `lat, lon, lat, lon…` del trazado. Un tramo de la DGT puede aparecer en
 varios trozos si no se pudo situar entero.
 
+## Sentido de los radares
+
+[`radar_directions.json`](radar_directions.json) indica qué sentido de circulación vigila cada
+radar fijo y de tramo de la DGT, como rumbo de brújula. La app lo usa para no avisar de los
+radares del sentido contrario (en una autovía, los de la otra calzada quedan a 20-30 m).
+
+**URL:** `https://raw.githubusercontent.com/secretariacyas-crypto/radares-datos/main/radar_directions.json`
+
+La DGT no publica rumbos, sólo si un radar fijo vigila los km crecientes o decrecientes (los que
+vigilan los dos sentidos aparecen dos veces) y, en los de tramo, su inicio y su fin.
+[`build_radar_directions.py`](build_radar_directions.py):
+
+1. Toma de OpenStreetMap la vía en la que está cada radar y su orientación local.
+2. Radares fijos: averigua hacia dónde crecen los km con puntos kilométricos cercanos
+   (CartoCiudad y otros radares de la misma carretera) y elige el sentido de la vía que
+   corresponde. Radares de tramo: el sentido que va del inicio al fin.
+3. Por prudencia, deja sin sentido (la app avisará en los dos) los radares con datos
+   contradictorios: un sentido equivocado haría callar a la app ante un radar real.
+   - Si el radar está sobre una calzada de sentido único de OSM que va al revés. Pasa con
+     un 5 % de los radares; el PDF de la DGT confirma su sentido, así que lo más probable es
+     que la coordenada esté en la otra calzada.
+   - Si el PDF de la DGT da otro sentido o «Ambos».
+
+Resultado actual: sentido para el 78 % de los radares fijos y 43 de los 47 de tramo. De los
+radares sobre calzadas de sentido único, el 89 % coincide con la calzada; si eso bajara del 80 %,
+o la cobertura del 70 %, no se publica nada y se abre una *issue*. Se recalcula cuando cambia el
+inventario de radares de la DGT y el día 1 de cada mes.
+
+```sh
+python build_radar_directions.py --if-changed   # o sin opciones para recalcular siempre
+```
+
+```json
+{"generated":"2026-10-27","radars":{"CABINACINEMOMETRO_120322":[189],"CVM_161274":[290,301]}}
+```
+
+Las claves son los identificadores de la DGT sin `GUID_`. Radares fijos: un rumbo (0 = norte,
+90 = este). Radares de tramo: el rumbo al entrar y al salir (`null` si no se pudo calcular).
+
 ## Fuentes y licencia de los datos
 
 - Tramos: Dirección General de Tráfico.
@@ -70,5 +109,7 @@ varios trozos si no se pudo situar entero.
   [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). Como base de datos
   derivada, `mobile_zones.json` se distribuye también bajo la ODbL.
 - Puntos kilométricos: CartoCiudad © Instituto Geográfico Nacional / CNIG (CC BY 4.0).
+- Radares y su sentido: Dirección General de Tráfico. `radar_directions.json` usa también
+  OpenStreetMap y se distribuye bajo la ODbL.
 
 Los tramos son orientativos: la DGT puede situar radares móviles en otros puntos.
